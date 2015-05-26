@@ -1,6 +1,6 @@
 {
   "name": "supersoaker",
-  "description": "Add custom npm registry + user credentials to npmrc based on environment variables",
+  "description": "Add custom npm registry + user credentials to npmrc based on environment variables or CLI options",
   "version": "1.0.0",
   "keywords": [
     "npm",

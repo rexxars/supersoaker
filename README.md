@@ -1,6 +1,6 @@
 # supersoaker
 
-Add custom npm registry + user credentials to npmrc based on environment variables or CLI options.
+Add custom npm registry + user credentials to `.npmrc` based on environment variables or CLI options.
 
 ## Disclaimer
 
