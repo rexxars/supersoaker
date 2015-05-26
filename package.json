@@ -1,0 +1,31 @@
+{
+  "name": "supersoaker",
+  "description": "Add custom npm registry + user credentials to npmrc based on environment variables",
+  "version": "1.0.0",
+  "keywords": [],
+  "main": "src/supersoaker.js",
+  "scripts": {
+    "lint": "gulp lint",
+    "prepublish": "npm prune && gulp test",
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.schibsted.io:vg/supersoaker.git"
+  },
+  "publishConfig": {
+    "registry": "http://npm.vgnett.no"
+  },
+  "author": "Espen Hovlandsdal <rexxars@gmail.com>",
+  "license": "Proprietary",
+  "devDependencies": {
+    "eslint": "^0.21.2",
+    "gulp": "^3.8.11",
+    "gulp-eslint": "^0.12.0",
+    "gulp-istanbul": "^0.9.0",
+    "gulp-mocha": "^2.1.0",
+    "istanbul": "^0.3.14",
+    "vgno-coding-standards": "^1.0.5"
+  },
+  "dependencies": {}
+}
