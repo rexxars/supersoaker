@@ -2,30 +2,34 @@
   "name": "supersoaker",
   "description": "Add custom npm registry + user credentials to npmrc based on environment variables",
   "version": "1.0.0",
-  "keywords": [],
+  "keywords": [
+    "npm",
+    "adduser",
+    "registry"
+  ],
   "main": "src/supersoaker.js",
+  "bin" : {
+    "supersoaker" : "./src/supersoaker.js"
+  },
   "scripts": {
-    "lint": "gulp lint",
-    "prepublish": "npm prune && gulp test",
-    "test": "gulp test"
+    "lint": "eslint .",
+    "test": "npm run lint"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.schibsted.io:vg/supersoaker.git"
+    "url": "git@github.com:rexxars/supersoaker.git"
   },
   "publishConfig": {
-    "registry": "http://npm.vgnett.no"
+    "registry": "http://registry.npmjs.org"
   },
-  "author": "Espen Hovlandsdal <rexxars@gmail.com>",
-  "license": "Proprietary",
+  "author": "Espen Hovlandsdal <espen@hovlandsdal.com>",
+  "license": "MIT",
   "devDependencies": {
     "eslint": "^0.21.2",
-    "gulp": "^3.8.11",
-    "gulp-eslint": "^0.12.0",
-    "gulp-istanbul": "^0.9.0",
-    "gulp-mocha": "^2.1.0",
-    "istanbul": "^0.3.14",
-    "vgno-coding-standards": "^1.0.5"
+    "eslint-config-vaffel": "^1.0.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "npm": "^2.10.1",
+    "yargs": "^3.9.1"
+  }
 }
