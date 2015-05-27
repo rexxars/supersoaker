@@ -39,7 +39,7 @@ These are alternatives to specifying CLI options:
 
 * `NPM_REGISTRY` - Registry URL (eg. `https://registry.npmjs.org`)
 * `NPM_USER`     - Registry username
-* `NPM_PASSWORD  - Registry password
+* `NPM_PASSWORD` - Registry password
 * `NPM_EMAIL`    - User email address
 
 ## License
